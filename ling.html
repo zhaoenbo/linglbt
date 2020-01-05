@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>铃铛</title>
+    <link rel="icon" href="C0EDD530E75307F297066F34E2537E43.jpg">
+    <style>
+        .lbt {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+
+
+        }
+
+        .lbt .swiper-wrapper>.swiper-slide>img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .lbt .swiper-wrapper>.swiper-slide {
+            height: 500px;
+            width: 500px;
+        }
+
+        .lbt .swiper-wrapper {
+            height: 500px;
+            width: 500px;
+
+        }
+        audio{
+            position: absolute;
+            left: 40%;
+           
+            z-index: 99;
+        }
+    </style>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+
+<body>
+
+    <audio src="花僮-桥边姑娘（女声版）.mp3" autoplay controls></audio>
+
+
+    <div class="lbt">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="imange/07E8167D522589CC1689F8990E6F0196.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="imange/137A1626CAC90160276B2CB5392FB9BE.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="imange/7DB3FC84DCB55B0D706295128A652D88.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="imange/96BC2797A9542E1CB252DE4628BFB229.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="imange/A05FF9C58818CA1A0C06D2C324853660.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="imange/B239D1D0AB1785CC49D38884DA71F07A.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="imange/B4EE2EF3D61FCAC8906CBC18E52EF8D1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="imange/B8C67BD8327AC6E222AD6821247A4806.jpg" alt=""></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+    </div>
+
+    <script src="swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            //   direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })        
+    </script>
+</body>
+
+</html>
